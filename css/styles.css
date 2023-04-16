@@ -830,7 +830,12 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 color: #2E2F42;
-margin-bottom: 20px;
+margin-bottom: 16px;
+margin-top: 72px;
+}
+
+.modal-form {
+margin-bottom: 24px;
 }
 
 .input-name {
@@ -840,22 +845,62 @@ letter-spacing: 0.04em;
 color: #8E8F99;
 }
 
-.input-icon {
-  position: relative;
-  left: 5px;
-  top: 50%;
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
-.modal-button {
-display: flex;
-width: 169px;
-height: 56px;
- font-weight: 500;
-font-size: 16px;
-line-height: 1/5x;
-display: flex;
-align-items: center;
-text-align: center;
+.modal-input {
+  width: 360px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  padding-left: 16px;
+  outline: transparent;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.modal-icon {
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.input-icon {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 169px;
+  height: 56px;
+  left: 635px;
+  top: 584px;
+  background: #4D5AE5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+}
+
+.privacy-text {
+font-size: 12px;
+line-height: 1.17px;
 letter-spacing: 0.04em;
-color: #fff;
+color: #8E8F99;
+margin-left: 48px;
 }
