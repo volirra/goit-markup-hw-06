@@ -846,7 +846,7 @@ margin-top: 72px;
   width: 360px;
   height: 40px;
   font-size: 14px;
-  border: 1px solid #2e2f42;
+  border:1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 16px;
   outline: transparent;
@@ -890,6 +890,36 @@ margin-top: 72px;
   margin-left: 24px;
 }
 
+.check-text {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition-duration: 250ms;
+} 
+  
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.08);
+  margin-right: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.input-chec:checked +.check-text span {
+border-color: #4d5ae5;
+border: none;
+fill: #f4f4fd;
+}
+
+.input-chec:focus +.check-text span {
+  border-color: #2e2f42;
+}
+
 .modal-button {
   display: flex;
   width: 169px;
@@ -908,29 +938,4 @@ margin-top: 72px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
-}
-.input-check {
-
-}
-
-.check-text span {
-width: 16px;
-height: 16px;
-border-radius: 2px;
-border: 1px solid rgba(46, 47, 66, 0.08);
-margin-right: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-fill: transparent;
-}
-
-.input-chec:checked +.check-text span {
-border-color: #4d5ae5;
-border: none;
-fill: #f4f4fd;
-}
-
-.input-chec:focus +.check-text span {
-  border-color: ;
 }
