@@ -834,14 +834,6 @@ margin-bottom: 16px;
 margin-top: 72px;
 }
 
-.modal-form {
-margin-bottom: 24px;
-}
-
-.input-name {
-margin-bottom: 24px;
-}
-
 .modal-label {
   font-size: 12px;
   line-height: 1.17;
@@ -876,13 +868,26 @@ margin-bottom: 24px;
 
 .modal-icon {
   position: absolute;
-  left: 16px;
+  left: 43px;
   top: 50%;
   transform: translate(-50%);
 }
 
-.input-icon {
+.modal-icon {
   position: absolute;
+}
+
+.modal-textarea {
+  width: 360px;
+  height: 120px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 14px;
+  color:  rgba(46, 47, 66, 0.4);
+  padding: 8px;
+  resize: none;
+  margin-left: 24px;
 }
 
 .modal-button {
@@ -902,6 +907,7 @@ margin-bottom: 24px;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 24px;
 }
 .input-check {
 
@@ -922,7 +928,7 @@ fill: transparent;
 .input-chec:checked +.check-text span {
 border-color: #4d5ae5;
 border: none;
-fill: ;
+fill: #f4f4fd;
 }
 
 .input-chec:focus +.check-text span {
