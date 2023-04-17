@@ -839,10 +839,7 @@ margin-bottom: 24px;
 }
 
 .input-name {
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: #8E8F99;
+margin-bottom: 24px;
 }
 
 .modal-label {
@@ -850,6 +847,7 @@ color: #8E8F99;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-left: 24px;
 }
 
 .modal-input {
@@ -864,8 +862,19 @@ color: #8E8F99;
   margin-right: 24px;
 }
 
+.modal-input:focus {
+  border-color: #4d5ae5;
+} 
+
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+.input-wrap {
+  position: relative;
+}
+
 .modal-icon {
-  display: block;
   position: absolute;
   left: 16px;
   top: 50%;
@@ -873,34 +882,49 @@ color: #8E8F99;
 }
 
 .input-icon {
-  position: relative;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  position: absolute;
 }
 
-.button {
+.modal-button {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 32px;
-  gap: 10px;
-  position: absolute;
   width: 169px;
   height: 56px;
-  left: 635px;
-  top: 584px;
+  padding: 16px 32px;
   background: #4D5AE5;
+  color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5px;
+  letter-spacing: 0.04em;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.input-check {
 
 }
 
-.privacy-text {
-font-size: 12px;
-line-height: 1.17px;
-letter-spacing: 0.04em;
-color: #8E8F99;
-margin-left: 48px;
+.check-text span {
+width: 16px;
+height: 16px;
+border-radius: 2px;
+border: 1px solid rgba(46, 47, 66, 0.08);
+margin-right: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+}
+
+.input-chec:checked +.check-text span {
+border-color: #4d5ae5;
+border: none;
+fill: ;
+}
+
+.input-chec:focus +.check-text span {
+  border-color: ;
 }
