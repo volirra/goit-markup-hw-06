@@ -840,6 +840,8 @@ margin-top: 72px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-left: 24px;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .modal-input {
@@ -848,10 +850,11 @@ margin-top: 72px;
   font-size: 14px;
   border:1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-left: 16px;
+  padding-left: 38px;
   outline: transparent;
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 26px;
 }
 
 .modal-input:focus {
@@ -868,8 +871,8 @@ margin-top: 72px;
 
 .modal-icon {
   position: absolute;
-  left: 43px;
-  top: 50%;
+  left: 50px;
+  top: 21%;
   transform: translate(-50%);
 }
 
@@ -885,7 +888,6 @@ margin-top: 72px;
   outline: transparent;
   font-size: 14px;
   color:  rgba(46, 47, 66, 0.4);
-  padding: 8px;
   resize: none;
   margin-left: 24px;
 }
@@ -908,6 +910,7 @@ margin-top: 72px;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-left: 24px;
 }
 
 .input-chec:checked +.check-text span {
