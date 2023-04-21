@@ -45,6 +45,7 @@ body {
 }
 
 .list {
+  list-style: none;
 }
 
 .link {
@@ -62,6 +63,11 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
 /*-----Header-----*/
 
 .header {
@@ -845,6 +851,9 @@ overflow: hidden;
   margin-right: 24px;
   margin-bottom: 8px;
   margin-top: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -864,6 +873,9 @@ overflow: hidden;
   left: 50px;
   top: 21%;
   transform: translate(-50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -916,7 +928,6 @@ overflow: hidden;
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  /*clip: rect(0 0 0 0);*/
   overflow: hidden;
 }
 
