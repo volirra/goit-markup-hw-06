@@ -831,7 +831,7 @@ text-align: center;
 letter-spacing: 0.02em;
 color: #2E2F42;
 margin-bottom: 16px;
-margin-top: 72px;
+/*margin-top: 72px;*/
 }
 
 .modal-label {
@@ -882,15 +882,21 @@ margin-top: 72px;
 .modal-textarea {
   width: 360px;
   height: 120px;
-  border: 1px solid #999999;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: transparent;
   font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
   color:  rgba(46, 47, 66, 0.4);
   resize: none;
   margin-left: 24px;
   padding-top: 8px;
   padding-left: 16px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-textarea::placeholder {
@@ -900,9 +906,16 @@ margin-top: 72px;
   color: #8E8F99;
 }
 
+.modal-check {
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
 .privacy-policy {
   margin-left: 4px;
+  color: #4d5ae5;
 }
+
 .check-text {
   font-size: 12px;
   display: flex;
@@ -916,8 +929,7 @@ margin-top: 72px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.04);
-  margin-right: 22px;
-  display: flex;
+  margin-right: 24px;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -930,7 +942,7 @@ margin-top: 72px;
 }
 
 .input-check:focus +.check-text span {
-  margin-left: 24px;
+  border-color: #fff;
 }
 
 .modal-button {
@@ -952,4 +964,8 @@ margin-top: 72px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 24px;
+  margin-bottom: 24px;
+  transition-property: box-shadow, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
