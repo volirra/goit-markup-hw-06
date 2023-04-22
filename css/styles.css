@@ -828,7 +828,7 @@ overflow: hidden;
   letter-spacing: 0.02em;
   color: #2E2F42;
   margin-bottom: 16px;
-  padding-top: 48px;
+  margin-top: 72px;
 }
 
 .modal-label {
@@ -851,6 +851,7 @@ overflow: hidden;
   margin-right: 24px;
   margin-bottom: 8px;
   margin-top: 4px;
+  background-repeat: no-repeat;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -896,6 +897,7 @@ overflow: hidden;
   margin-left: 24px;
   margin-bottom: 4px;
   padding-top: 8px;
+  padding-bottom: 4px;
   padding-left: 16px;
   transition-property: border;
   transition-duration: 250ms;
@@ -909,21 +911,32 @@ overflow: hidden;
   color: #8E8F99;
 }
 
-.modal-check {
-  margin-left: 24px;
-  margin-top: 16px;
-}
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+  fill: #4d5ae5;
+} 
 
 .privacy-policy {
   margin-left: 4px;
   color: #4d5ae5;
+}
+.input-check {
+  position: absolute;
+  margin-left: 24px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.04);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .visually-hidden {
   position: absolute;
   width: 16px;
   height: 16px;
-  margin: 0;
+  margin: -1;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -937,6 +950,8 @@ overflow: hidden;
   align-items: center;
   position: relative;
   color:#8E8F99;
+  margin-left: 4px;
+  margin-top: 16px;
 } 
   
 .check-text span {
